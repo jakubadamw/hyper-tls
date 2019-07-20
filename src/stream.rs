@@ -3,8 +3,8 @@ use std::io;
 use std::pin::Pin;
 use std::task::{Context, Poll};
 
-pub use tokio_tls::TlsStream;
 use tokio_io::{AsyncRead, AsyncWrite};
+pub use tokio_tls::TlsStream;
 
 /// A stream that might be protected with TLS.
 pub enum MaybeHttpsStream<T> {
